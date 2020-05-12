@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+   const choice = ["Rock", "Paper", "Scissors"]; 
+   
+function computerPlay() {let selection = choice[Math.floor(Math.random() * choice.length)];
+return (selection)}
+function playRound(playerSelection, computerSelection){
+computerSelection = computerPlay();
+playerSelection = prompt("Rock, Paper or Scisors?", '');
+if (playerSelection.toUpperCase()=='ROCK' && computerSelection=='Paper'){return("Paper Beats Rock! You Lose!")
+} else if (playerSelection.toUpperCase()=='ROCK' && computerSelection=='Scissors'){return("Rock Beats Scissors! You Win!")
+} else if (playerSelection.toUpperCase()=='PAPER' && computerSelection=='Scissors'){return("Scissors Beats Paper! You Lose!")
+} else if (playerSelection.toUpperCase()=='PAPER' && computerSelection=='Rock'){return("Paper Beats Rock! You Win!")
+} else if (playerSelection.toUpperCase()=='SCISSORS' && computerSelection=='Paper'){return("Scissors Beats Paper! You Win!")
+} else if (playerSelection.toUpperCase()=='SCISSORS' && computerSelection=='Rock'){return("Rock Beats Scissors! You Lose!")
+} else if (playerSelection.toUpperCase()=='ROCK' && computerSelection=='Rock'){return("Draw")
+} else if (playerSelection.toUpperCase()=='SCISSORS' && computerSelection=='Scissors'){return("Draw")
+} else if (playerSelection.toUpperCase()=='ROCK' && computerSelection=='Rock'){return("Draw")
+} else if (playerSelection.toUpperCase()=='PAPER' && computerSelection=='Paper'){return("Draw")
+}}
+
+
+</script>
+</body>
+</html>
